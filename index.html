@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/3fd17396c4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="cric.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js" crossorigin="anonymous"></script>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href = "#" class="navbar-brand"><img src="img/icon.png" width="50" height="50" /> 
+                
+            </a>
+            <button type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target = "#navbarNav" 
+            class="navbar-toggler" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link active" href="#">
+                            <i class="fa fa-home"></i>
+                            Home
+                            <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    <li class="nav-item active">
+                        <a href="schedule.html" class="nav-link">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            Schedule
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="archives.html" class="nav-link">
+                            <i class="fa fa-archive"></i>
+                            Archives
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-clipboard-list"></i>
+                            Series
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a href="teams.html" class="nav-link">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            Teams
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a href="playerList.html" class="nav-link">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Players
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a href="#" class="nav-link disabled">
+                            Disabled
+                        </a>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
+                        <a href="#" 
+                        class="nav-link
+                        dropdown-toggle" 
+                        id="navbarDropdown" 
+                        role="button" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"> 
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" 
+                        aria-labelledby="navbarDropdown">
+                            <li><a href="#" 
+                                class="dropdown-tem">Item 1</a></li>
+                            <li><a href="#" 
+                                class="dropdown-tem">Item 2</a></li>
+                            <li><a href="#" 
+                                class="dropdown-tem">Item 3</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+    
+            </div>
+            <!-- <form class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search" aria-label="search">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </form> -->
+        </div>
+        <p><button id="button" hidden >signup today</button></p>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="12" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="12" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="12" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="1900px" height="450px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="1900px" height="450px" fill="#777"/></svg>
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p>Some representative placeholder content for the first slide of the carousel.</p>
+              </div>
+            </div>
+          </div>
+      </div> -->
+      </div>
+      <button class="chat-btn" data-modal-target="#modal" onClick="
+parent.open('http://localhost:3000/#')"> 
+        <i class="fas fa-comment-alt"> CHAT </i>
+    </button>
+    </body>
+    </html>
+    <script>
+    document.getElementById('button').addEventListener('click', loadUsers);
+    function loadUsers(){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.cricapi.com/v1/cricScore?apikey='+ API_KEY);
+      
+        xhr.onload = function(){
+          if(this.status == 200){
+            var users = JSON.parse(this.responseText);
+      
+            var output = '';
+            {
+
+              output +=
+              '<div class="carousel-indicators">'+
+         ' <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>'+
+          '<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>'+
+          '<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>'+
+       ' </div>'+
+        '<div class="carousel-inner">'+
+          '<div class="carousel-item active">'+
+         '   <svg class="bd-placeholder-img" width="1900px" height="450px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="1900px" height="450px" fill="#777"/></svg>'+
+    
+           ' <div class="container">'+
+             ' <div class="carousel-caption">'+
+                '  <h3>'+users.data[97].t1+ '&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[97].t2+'<h3>'+ 
+                   '<img height="100px" width="100px" src="'+users.data[97].t2img+'" >&nbsp;&nbsp;'+'&nbsp;&nbsp;<img height="100px" width="100px" src="img/vs.png" alt="">&nbsp;&nbsp;'+'&nbsp;&nbsp;<img height="100px" width="100px" src="'+users.data[97].t1img+'" >'+
+                   '  <h5>'+users.data[97].status+'<h5>'+ 
+                    '  <h5>'+users.data[97].t1+'&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[97].t2+'<h5>'+ 
+                      '  <h5>'+users.data[97].t1s+'&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[97].t2s+'<h5>'+ 
+                '<p><a class="btn btn-sm btn-primary" href="#">Refresh</a></p>'+
+              '</div>'+
+            '</div>'+
+         ' </div>'+
+          '<div class="carousel-item">'+
+          '  <svg class="bd-placeholder-img" width="1900px" height="450px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="1900px" height="450px" fill="#777"/></svg> '+
+           ' <div class="container">'+
+            ' <div class="carousel-caption">'+
+                '  <h3>'+users.data[11].t1+ '&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[11].t2+'<h3>'+ 
+                   '<img height="100px" width="100px" src="'+users.data[2].t2img+'" >&nbsp;&nbsp;'+'&nbsp;&nbsp;<img height="100px" width="100px" src="img/vs.png" alt="">&nbsp;&nbsp;'+'&nbsp;&nbsp;<img height="100px" width="100px" src="'+users.data[2].t1img+'" >'+
+                   '  <h5>'+users.data[11].status+'<h5>'+ 
+                    '  <h5>'+users.data[11].t1+'&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[11].t2+'<h5>'+ 
+                      '  <h5>'+users.data[11].t1s+'&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[11].t2s+'<h5>'+ 
+                '<p><a class="btn btn-sm btn-primary" href="#">Refresh</a></p>'+
+              '</div>'+
+            '</div>'+
+         ' </div>'+
+          '<div class="carousel-item">'+
+           ' <svg class="bd-placeholder-img" width="1900px" height="450px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="1900px" height="450px" fill="#777"/></svg>'+
+            '<div class="container">'+
+              ' <div class="carousel-caption">'+
+                '  <h3>'+users.data[16].t1+ '&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[16].t2+'<h3>'+ 
+                   '<img height="100px" width="100px" src="'+users.data[2].t2img+'" >&nbsp;&nbsp;'+'&nbsp;&nbsp;<img height="100px" width="100px" src="img/vs.png" alt="">&nbsp;&nbsp;'+'&nbsp;&nbsp;<img height="100px" width="100px" src="'+users.data[2].t1img+'" >'+
+                   '  <h5 >'+users.data[16].status+'<h5>'+ 
+                    '  <h5>'+users.data[16].t1+'&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[16].t2+'<h5>'+ 
+                      '  <h5>'+users.data[16].t1s+'&nbsp;&nbsp;v/s&nbsp;&nbsp;'+users.data[16].t2s+'<h5>'+ 
+                '<p><a class="btn btn-sm btn-primary" href="#">Refresh</a></p>'+
+              '</div>'+
+            '</div>'+
+         ' </div>'+
+       ' </div>'+
+        '<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">'+
+         ' <span class="carousel-control-prev-icon" aria-hidden="true"></span>'+
+          '<span class="visually-hidden">Previous</span>'+
+        '</button>'+
+      '  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">'+
+         ' <span class="carousel-control-next-icon" aria-hidden="true"></span>'+
+         ' <span class="visually-hidden">Next</span>'+
+        '</button>';
+              
+            }
+      
+            document.getElementById('myCarousel').innerHTML = output;
+            console.log(users);
+          }
+        }
+        xhr.send();
+      }
+      </script>
+        <script type="text/javascript">
+          document.getElementById("button").click();
+      </script>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/476e680ba7.js" crossorigin="anonymous"></script>
+    <div id="footer">
+      <div class="logoforfooter">
+          <img width="100px" class="logoforfooterimg" src="img/icon.png" alt="">
+      </div>
+      <div class="footerlines">
+          <div class="footerline1">
+               <h3>WebApp</h3>  
+          </div>
+
+          <div class="footerline2">
+              <h3>FOLLOW US ON</h3>
+              <p> <i class="fab fa-facebook-f"></i>facebook</p>
+            
+              <p> <i class="fab fa-youtube"></i>youtube</p>
+              <p> <i class="fab fa-pinterest"></i>Pinterest</p>
+                 <p> <i class="fab fa-twitter-square"></i>twitter</p>
+          </div>
+
+          <div class="footerline3">
+              <h3>COMPANY</h3>
+              <p>Careers</p>
+              <p>Advertise</p>
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+             
+          </div>
+          
+
+      </div>
+      <h4>© 2022 CricHeart.com</h4>
+  </div>
+</body>
+</html>
+<script src="NavBar.js"></script>

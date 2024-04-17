@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="css/schedule.css"/>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/3fd17396c4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="cric.ico" type="image/x-icon">
+   
+</head>
+<body>
+    <button class="chat-btn" data-modal-target="#modal" onClick="
+          parent.open('http://localhost:3000/#')"> 
+        <i class="fas fa-comment-alt"> CHAT </i>
+    </button>
+    <nav class="navbar fixed-top navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href = "#" class="navbar-brand"><img src="img/icon.png" width="50" height="50" /> 
+            </a>
+            <button type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target = "#navbarNav" 
+            class="navbar-toggler" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link" href="#">
+                            <i class="fa fa-home"></i>
+                            Home
+                            <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    <li class="nav-item active">
+                        <a href="schedule.html" class="nav-link active">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            Schedule
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="archives.html" class="nav-link">
+                            <i class="fa fa-archive"></i>
+                            Archives
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="series.html" class="nav-link">
+                            <i class="fa fa-clipboard-list"></i>
+                            Series
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a href="teams.html" class="nav-link">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            Teams
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a href="playerList.html" class="nav-link">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Players
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a href="#" class="nav-link disabled">
+                            Disabled
+                        </a>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
+                        <a href="#" 
+                        class="nav-link
+                        dropdown-toggle" 
+                        id="navbarDropdown" 
+                        role="button" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"> 
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" 
+                        aria-labelledby="navbarDropdown">
+                            <li><a href="#" 
+                                class="dropdown-tem">Item 1</a></li>
+                            <li><a href="#" 
+                                class="dropdown-tem">Item 2</a></li>
+                            <li><a href="#" 
+                                class="dropdown-tem">Item 3</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+    
+            </div>
+            <!-- <form class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search" aria-label="search">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </form> -->
+        </div>
+    </nav>
+
+    <div id="containerscheduleTopics">
+        <div>
+            <div><h1 id="line1">Cricket Schedule</h1></div>
+            <div id="cstopicid">
+                <!-- <div class="cstopic">International</div> -->
+                <button class="cstopic" onclick="myFunction(this)" id="odi">International</button>
+                <!-- <button class="cstopic" onclick="myFunction(this)" id="dom">Domestic & Others</button> -->
+                <button class="cstopic" onclick="myFunction(this)" id="t20">T20 Leagues</button>
+                <!-- <button class="cstopic" onclick="myFunction(this)" id="wom">Women</button> -->
+                <button class="cstopic" onclick="myFunction(this)" id="all">All Matches</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="containerschedule"></div>
+    </div>
+    <div id="footer" class="footer fixed">
+        <div class="logoforfooter">
+            
+        </div>
+        <div class="footerlines">
+            <div class="footerline1">
+                 <h3>MOBILE SITE & APPS</h3>  
+             
+               <p><i class="fas fa-globe"></i>m.criheart.com</p> 
+                <p> <i class="fas fa-robot"></i>Android</p>
+                <p>  <i class="fas fa-apple-alt"></i></i> iOS</p>
+            </div>
+
+            <div class="footerline2">
+                <h3>FOLLOW US ON</h3>
+                <p> <i class="fab fa-facebook-f"></i>facebook</p>
+              
+                <p> <i class="fab fa-youtube"></i>youtube</p>
+                <p> <i class="fab fa-pinterest"></i>Pinterest</p>
+                   <p> <i class="fab fa-twitter-square"></i>twitter</p>
+            </div>
+
+            <div class="footerline3">
+                <h3>COMPANY</h3>
+                <p>Careers</p>
+                <p>Advertise</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Cricheart TV Ads</p>
+               
+            </div>
+            
+
+        </div>
+        <h4 id="lastline">© 2022 Cricheart.com</h4>
+    </div>
+
+    <script src="js/api.js" crossorigin="anonymous"></script>
+    <script>
+    
+        function myFunction(elem){ 
+          let xhr = new XMLHttpRequest();
+          xhr.open('GET', 'https://api.cricapi.com/v1/matches?apikey='+ API_KEY + '&offset=0', true);
+
+          xhr.onload = function(){
+            
+            if(this.status == 200){
+              var users = JSON.parse(this.responseText);
+              
+            //   function custom_sort(a, b) {
+            //     return new Date(a.lastUpdated).getTime() - new Date(b.lastUpdated).getTime();
+            //  }
+
+            //  users.sort(custom_sort);
+            
+              var output = '';
+              var lastT20;
+              var lastODI;
+              var firstT20 = false;
+
+              for(var i in users.data){ 
+                if(elem.id=="all" || users.data[i].matchType==elem.id){
+
+                    let a = users.data[i].dateTimeGMT + '.000Z';
+                    let d = new Date(users.data[i].date);
+                    let s = new Date(a).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+                    console.log(s)
+                    
+                    let temp = '';
+            
+                    if(elem.id=="t20"){
+                        if(firstT20==false){
+                          firstT20=true;
+                          temp = '<div class="dates">' + day[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</div>';
+                        } else if(users.data[i].date!=users.data[lastT20].date){
+                          temp = '<div class="dates">' + day[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</div>';
+                        }
+                        lastT20=i;
+                    } else if(elem.id=="odi"){
+                        if(firstT20==false){
+                          firstT20=true;
+                          temp = '<div class="dates">' + day[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</div>';
+                        } else if(users.data[i].date!=users.data[lastODI].date){
+                          temp = '<div class="dates">' + day[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</div>';
+                        }
+                        lastODI=i;
+                    } else {
+                      if(i==0 || users.data[i].date!=users.data[i-1].date){
+                          temp = '<div class="dates">' + day[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</div>';
+                      }
+                    }
+
+                    output +=
+                    temp + 
+                    '<div class="tours">' +
+                        // '<div class="tourhead">' + users.data[i].series_id + '</div>' +
+                        '<div class="tourhead">' + users.data[i].name + '</div>' +
+                        '<div>' +
+                            // '<p class="allp">' + users.data[i].name + '</p>' +
+                            '<p class="allp" style="font-size: 17px;">' + users.data[i].venue + '</p>' +
+                        '</div>' + 
+                        '<div class="time">' +
+                            '<div>' + 
+                                s.slice(12).slice(0,5) +' IST (' + months[d.getMonth()] + ' ' + d.getDate() + ')' + 
+                                '<p class="allp" style="padding: 0%">' + users.data[i].dateTimeGMT.slice(11  ,16) + ' GMT </p>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>';
+                }
+              }
+            
+    
+              document.getElementById('containerschedule').innerHTML = output;
+              console.log(users);
+            }
+          }
+    
+          xhr.send();
+        }
+        
+      </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/476e680ba7.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        document.getElementById("all").click();
+    </script>
+</body>
+</html>
+<script src="NavBar.js"></script>
